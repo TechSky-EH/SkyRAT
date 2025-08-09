@@ -48,12 +48,23 @@ git clone https://github.com/techsky-eh/skyrat.git
 cd skyrat
 ```
 
-### 2. Install Python Dependencies
+### 2. Create Virtual Environment
+```bash
+# Create virtual environment
+python3 -m venv venv
+
+# Activate virtual environment
+source venv/bin/activate  # Linux/macOS
+# or
+venv\Scripts\activate     # Windows
+```
+
+### 3. Install Python Dependencies
 ```bash
 pip3 install -r requirements.txt
 ```
 
-### 3. Setup Android Build Environment
+### 4. Setup Android SDK
 ```bash
 # Linux/macOS
 chmod +x tools/android-sdk-setup.sh
@@ -62,7 +73,7 @@ chmod +x tools/android-sdk-setup.sh
 # Or manually install Android SDK and set ANDROID_HOME
 ```
 
-### 4. Verify Installation
+### 5. Verify Installation
 ```bash
 python3 skyrat.py --help
 ```

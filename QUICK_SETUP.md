@@ -8,6 +8,12 @@
 git clone https://github.com/techsky-eh/skyrat.git
 cd skyrat
 
+# Create and activate virtual environment
+python3 -m venv venv
+source venv/bin/activate  # Linux/macOS
+# or
+venv\Scripts\activate     # Windows
+
 # Install Python dependencies
 pip3 install -r requirements.txt
 

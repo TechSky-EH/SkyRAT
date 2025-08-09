@@ -5,13 +5,8 @@
 pyngrok>=5.1.0              # Ngrok integration for external tunnels
 requests>=2.28.0            # HTTP requests for API calls
 
-# Command line interface
-argparse>=1.4.0             # Command line argument parsing (usually built-in)
+# Command line interface and output
 colorama>=0.4.4             # Cross-platform colored terminal output
-
-# File and data handling
-pathlib>=1.0.1              # Path handling (usually built-in Python 3.4+)
-base64                      # Base64 encoding (built-in)
 
 # Development and debugging
 setuptools>=65.0.0          # Package building and installation
@@ -25,7 +20,7 @@ click>=8.0.0                # Alternative command line interface framework
 netifaces>=0.11.0           # Network interface detection
 psutil>=5.9.0               # System and process monitoring
 
-# Note: Some packages are built-in to Python 3.7+
+# Note: The following are built-in Python modules and don't need installation:
 # - socket (networking)
 # - threading (concurrent programming) 
 # - subprocess (process management)
@@ -37,3 +32,6 @@ psutil>=5.9.0               # System and process monitoring
 # - re (regular expressions)
 # - shutil (file operations)
 # - tempfile (temporary file handling)
+# - pathlib (path handling - Python 3.4+)
+# - base64 (base64 encoding/decoding)
+# - argparse (command line argument parsing)

@@ -28,7 +28,13 @@ Complete installation guide for the SkyRAT Android Security Testing Framework.
 git clone https://github.com/techsky-eh/skyrat.git
 cd skyrat
 
-# Run automated setup
+# Create and activate virtual environment
+python3 -m venv venv
+source venv/bin/activate  # Linux/macOS
+# or
+venv\Scripts\activate     # Windows
+
+# Install dependencies and setup SDK
 pip3 install -r requirements.txt
 chmod +x tools/android-sdk-setup.sh
 ./tools/android-sdk-setup.sh
