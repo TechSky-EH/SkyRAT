@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">System Update</string>
+    <string name="control_panel_title">Control Panel</string>
+    <string name="service_running">Service Running</string>
+    <string name="restart_connection">Restart Connection</string>
+    <string name="uninstall_app">Uninstall Application</string>
+    <string name="notification_title">Checking for Updates</string>
+    <string name="notification_text">Fetching</string>
+    <string name="connection_status">Connection Status</string>
+    <string name="controls">Controls</string>
+    <string name="remote_admin_tool">Remote Administration Tool</string>
+</resources>

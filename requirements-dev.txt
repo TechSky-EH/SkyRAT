@@ -1,0 +1,198 @@
+# SkyRAT Development Dependencies
+# Install with: pip3 install -r requirements-dev.txt
+
+# Include production requirements
+-r requirements.txt
+
+# ================================
+# TESTING FRAMEWORKS
+# ================================
+
+# Main testing framework
+pytest>=7.4.0                   # Python testing framework
+pytest-cov>=4.0.0              # Coverage reporting for pytest
+pytest-mock>=3.12.0            # Mock framework for pytest
+pytest-xdist>=3.3.0            # Parallel testing support
+pytest-timeout>=2.1.0          # Test timeout support
+
+# Test data and fixtures
+pytest-factoryboy>=2.5.0       # Factory pattern for test data
+faker>=19.0.0                   # Fake data generation
+responses>=0.23.0               # Mock HTTP responses
+
+# ================================
+# CODE QUALITY
+# ================================
+
+# Code formatting
+black>=23.7.0                   # Python code formatter
+isort>=5.12.0                   # Import sorting
+autopep8>=2.0.0                 # PEP 8 code formatter
+
+# Code linting
+flake8>=6.0.0                   # Python linting
+pylint>=2.17.0                  # Advanced Python linting
+bandit>=1.7.0                   # Security linting
+
+# Type checking
+mypy>=1.5.0                     # Static type checking
+types-requests>=2.31.0          # Type stubs for requests
+
+# ================================
+# DOCUMENTATION
+# ================================
+
+# Documentation generation
+sphinx>=7.1.0                   # Documentation generator
+sphinx-rtd-theme>=1.3.0         # Read the Docs theme
+sphinx-autodoc-typehints>=1.24.0 # Type hints in docs
+myst-parser>=2.0.0              # Markdown parser for Sphinx
+
+# API documentation
+sphinx-autoapi>=2.1.0          # Automatic API documentation
+
+# ================================
+# DEVELOPMENT TOOLS
+# ================================
+
+# Code quality automation
+pre-commit>=3.3.0               # Git pre-commit hooks
+tox>=4.6.0                      # Testing across environments
+
+# Debugging and profiling
+ipdb>=0.13.0                    # Enhanced debugger
+memory-profiler>=0.61.0         # Memory usage profiling
+line-profiler>=4.1.0            # Line-by-line profiling
+
+# Build tools
+build>=0.10.0                   # Modern Python build tool
+twine>=4.0.0                    # Package upload tool
+
+# ================================
+# SECURITY TESTING
+# ================================
+
+# Security analysis
+safety>=2.3.0                   # Check for known vulnerabilities
+semgrep>=1.32.0                 # Static analysis security tool
+
+# ================================
+# ANDROID DEVELOPMENT
+# ================================
+
+# Android debugging tools
+adb-shell>=0.4.0                # Python ADB implementation
+
+# ================================
+# NETWORKING AND ANALYSIS
+# ================================
+
+# Network testing
+requests-mock>=1.11.0           # Mock HTTP requests for testing
+httpx>=0.24.0                   # Async HTTP client for testing
+
+# Data analysis (for examples)
+matplotlib>=3.7.0               # Plotting library
+pandas>=2.0.0                   # Data analysis
+numpy>=1.24.0                   # Numerical computing
+
+# ================================
+# AUTOMATION AND CI/CD
+# ================================
+
+# GitHub Actions support
+github3.py>=4.0.0               # GitHub API wrapper
+
+# Environment management
+python-dotenv>=1.0.0            # Environment variable management
+
+# ================================
+# OPTIONAL DEVELOPMENT TOOLS
+# ================================
+
+# Enhanced CLI tools
+click-completion>=0.5.0         # Shell completion for Click
+rich-click>=1.6.0               # Rich formatting for Click
+
+# Code metrics
+radon>=6.0.0                    # Code complexity analysis
+vulture>=2.9.0                  # Dead code finder
+
+# Git tools
+gitpython>=3.1.0               # Git repository manipulation
+
+# ================================
+# JUPYTER NOTEBOOKS (for analysis)
+# ================================
+
+# Notebook support for data analysis examples
+jupyter>=1.0.0                  # Jupyter notebook
+ipykernel>=6.25.0              # Python kernel for Jupyter
+nbformat>=5.9.0                # Notebook format support
+
+# ================================
+# PLATFORM-SPECIFIC DEPENDENCIES
+# ================================
+
+# Windows-specific
+pywin32>=306; sys_platform == "win32"  # Windows APIs
+
+# Linux-specific  
+psutil>=5.9.0                   # System and process utilities
+
+# ================================
+# VERSION CONSTRAINTS
+# ================================
+
+# Ensure compatibility
+setuptools>=68.0.0              # Package building
+wheel>=0.41.0                   # Wheel package format
+pip>=23.0.0                     # Package installer
+
+# ================================
+# DEVELOPMENT WORKFLOW
+# ================================
+
+# Code review tools
+reviewdog>=0.14.0               # Automated code review
+
+# Release automation
+bump2version>=1.0.0             # Version bumping
+changelog-generator>=0.8.0      # Changelog generation
+
+# ================================
+# CONTAINER DEVELOPMENT
+# ================================
+
+# Docker support (optional)
+docker>=6.1.0                   # Docker Python API
+
+# ================================
+# CONFIGURATION
+# ================================
+
+# Configuration management
+pydantic>=2.1.0                 # Data validation
+dynaconf>=3.2.0                 # Configuration management
+
+# ================================
+# NOTES
+# ================================
+
+# Install development environment:
+#   pip3 install -r requirements-dev.txt
+#
+# Run tests:
+#   pytest
+#
+# Check code quality:
+#   black --check .
+#   flake8
+#   mypy .
+#
+# Generate documentation:
+#   cd docs && make html
+#
+# Run security checks:
+#   bandit -r .
+#   safety check

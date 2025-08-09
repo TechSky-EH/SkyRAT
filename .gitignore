@@ -1,0 +1,312 @@
+# SkyRAT .gitignore
+# Excludes sensitive data, build artifacts, and temporary files
+
+# ================================
+# SENSITIVE DATA - NEVER COMMIT
+# ================================
+
+# Configuration files with real IPs/credentials
+config.json
+secrets.json
+*.key
+*.pem
+*.p12
+*.jks
+keystore.properties
+
+# Backup files with sensitive data
+*.backup
+*.bak
+*_backup.*
+
+# Environment files
+.env
+.env.local
+.env.production
+
+# ================================
+# BUILD OUTPUTS
+# ================================
+
+# Built APK files
+build/
+*.apk
+*.aab
+*.ipa
+
+# Android build directories
+android/app/build/
+android/build/
+android/.gradle/
+android/local.properties
+android/captures/
+android/app/release/
+
+# Gradle wrapper JAR (will be downloaded)
+android/gradle/wrapper/gradle-wrapper.jar
+
+# ================================
+# DOWNLOADED/EXTRACTED DATA
+# ================================
+
+# Data dumps from devices
+dumps/
+downloads/
+extracted_data/
+device_data/
+
+# Audio/video recordings
+*.m4a
+*.mp4
+*.3gp
+*.wav
+*.mp3
+*.avi
+
+# Images and documents (unless specifically needed)
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.pdf
+*.doc
+*.docx
+
+# ================================
+# DEVELOPMENT FILES
+# ================================
+
+# IDE and editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Python development
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build_python/
+.pytest_cache/
+.coverage
+.tox/
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+
+# ================================
+# LOGS AND TEMPORARY FILES
+# ================================
+
+# Log files
+*.log
+logs/
+debug.log
+error.log
+server.log
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.temp
+
+# System files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# ================================
+# NETWORK AND TOOLS
+# ================================
+
+# Ngrok files
+ngrok
+ngrok.exe
+ngrok.yml
+
+# Network captures
+*.pcap
+*.pcapng
+*.cap
+
+# ================================
+# ANDROID SPECIFIC
+# ================================
+
+# Android Studio
+*.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+
+# Android NDK
+obj/
+
+# Android signing
+*.keystore
+signing.properties
+
+# Lint
+lint-report.html
+lint-report_files/
+lint-results.xml
+
+# ================================
+# OPERATING SYSTEM
+# ================================
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ================================
+# DOCUMENTATION BUILD
+# ================================
+
+# Sphinx documentation
+docs/_build/
+docs/build/
+
+# LaTeX
+*.aux
+*.log
+*.nav
+*.out
+*.snm
+*.toc
+*.vrb
+
+# ================================
+# TESTING
+# ================================
+
+# Test results
+test-results/
+coverage.xml
+*.cover
+.hypothesis/
+
+# ================================
+# PACKAGE MANAGERS
+# ================================
+
+# npm (if using for any web components)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# pip
+pip-log.txt
+pip-delete-this-directory.txt
+
+# ================================
+# CUSTOM EXCLUSIONS
+# ================================
+
+# Custom tools and scripts (if containing sensitive info)
+custom_tools/
+private_scripts/
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Configuration files
+config/production/
+config/real_*
+
+# Archives
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# ================================
+# ALLOW SPECIFIC FILES
+# ================================
+
+# Force include important files even if they match patterns above
+!android/gradle/wrapper/gradle-wrapper.properties
+!android/gradlew
+!android/gradlew.bat
+!docs/images/*.png
+!examples/*.jpg
+!README.md
+
+# ================================
+# PROJECT SPECIFIC
+# ================================
+
+# Legacy build files
+Compiled_apk/
+Jar_utils/
+*.smali
+
+# Development databases
+dev.db
+test.db
+
+# Performance profiles
+*.prof
+
+# Generated documentation
+api_docs/
+
+# Backup of original files during build
+*.kt.backup
+*.xml.backup
